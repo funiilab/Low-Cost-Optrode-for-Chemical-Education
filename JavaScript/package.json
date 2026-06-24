@@ -1,0 +1,33 @@
+{
+  "name": "optrode-visualization",
+  "version": "1.0.0",
+  "description": "Real-time sensor data visualization system for low-cost optical electrodes (optrode). Streams Arduino sensor data via WebSocket and displays interactive visualizations using p5.js.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "optrode",
+    "sensor",
+    "visualization",
+    "Arduino",
+    "WebSocket",
+    "p5js",
+    "real-time"
+  ],
+  "author": "Low-cost Optrode Project Team",
+  "license": "ISC",
+  "dependencies": {
+    "package": "^1.0.1",
+    "serialport": "^12.0.0",
+    "ws": "^8.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/takaharadsantos/Low-cost-optrode"
+  }
+}
