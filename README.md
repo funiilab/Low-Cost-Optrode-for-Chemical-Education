@@ -103,6 +103,3 @@ Edit these constants to modify behavior:
 
 Contributors: Takahara dos Santos and Gabriel N. Meloni
 
----
-
-For questions or issues, please check the troubleshooting section or consult the inline code comments for more details.
