@@ -21,6 +21,21 @@ transmittance to adapt the color changing to others stimuli.
 
 ## Requirements
 
+### Hardware
+
+The hardware consists of a microcontroller (Arduino) connected to two LEDs: one connected to an output pin, which serves as the light source, and the other connected to an input pin, which acts as the sensor.
+The optrode can be constructed using different types of LEDs and microcontrollers with these capabilities. A resistor is used to adjust the voltage supplied to the light-source LED, while a capacitor is used to filter noise from the sensor signal.
+
+The following is a list of the components and their prices required to build one optrode and the price of the microcontroller used in the work:
+| Component | Units | Price (USD) | Part Number (DigiKey) |
+| --- | --- | --- | --- |
+| Arduino UNO R4 Minima | 1 | 20.00 | ABX00080|
+| 5 mm LED | 2 | 0.18 | C503B-RAN-CZ0C0AA1 |
+| 130 $\Omega$ Resistor | 1 | 0.10 | CFR-50JB-52-130R |
+| 10 nF Capacitor | 1 | 0.27 | K104K15X7RF53K2 |
+| Anycubic Standard Resin | 14 g | 19.99 / kg | |
+| **Total (USD):** | | 21.01 |
+
 ### Software
 
 - Node.js (v14 or higher)
