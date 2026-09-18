@@ -8,7 +8,7 @@ transmittance to adapt the color changing to others stimuli.
 ## Components
 
 - **Optrode**: Colorimetric sensor that will be immersed in solution to measure the color changing. 
-   - *files*: 3D model (.stl), circuit diagram (.jpeg).
+   - *files*: 3D model (.stl), circuit diagram (.png).
 - **Arduino**: Microcontroller responsible to measure the LED photovoltage, proportional to color intensity, and realize a digital filtering.
    - *files*: Code (.ino).
 - **JavaScript**: Application responsible to communicate with the Arduino board and transform the color data in other stimuli.
@@ -121,5 +121,7 @@ Edit these constants to modify behavior:
 
 ## Authors
 
-Contributors: Takahara dos Santos and Gabriel N. Meloni
+Lead: Takahara dos Santos (takahara.santos@usp.br)
+
+PI: Gabriel N. Meloni  (gabriel.meloni@usp.br)
 
