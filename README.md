@@ -17,9 +17,12 @@ transmittance to adapt the color changing to others stimuli.
    - **illustration.js**: Modulate proportion of OH⁻, H₃O⁺, H₂O molecules illustrated.
    - **index.html**: Main HTML entry point
    - **package.json**: Node.js dependencies
+- **package-lock.json and package.json**: npm configuration files
 
 ## Requirements
+
 ### Software
+
 - Node.js (v14 or higher)
 - Web browser with WebSocket support (Chrome, Firefox, Safari, Edge)
 - npm (Node Package Manager)
@@ -27,6 +30,7 @@ transmittance to adapt the color changing to others stimuli.
 ## Installation
 
 ### 1. Install Dependencies
+
 ```bash
 npm install
 ```
@@ -36,6 +40,7 @@ This installs:
 - `serialport`: Arduino serial port communication
 
 ### 2. Configure Serial Port
+
 Edit `server.js` and update these variables to match your setup:
 ```javascript
 const SERIAL_PORT_PATH = 'COM3';        // Change to your Arduino port (COM3, COM4, etc. on Windows)
@@ -48,22 +53,20 @@ const SERIAL_BAUD_RATE = 9600;          // Match your Arduino baud rate
 - **Linux**: `ls /dev/tty*` in terminal (usually `/dev/ttyUSB0` or `/dev/ttyACM0`)
 
 ### 3. Start the Server
+
 ```bash
 npm start
 ```
 
-The server will start on `ws://localhost:8080`
-
 ### 4. Open Visualization in Browser
-```
-http://localhost:3000
-```
-(Or open `index.html` directly if not using a web server)
+
+Open `index.html` directly in your file manager
 
 ## Configuration
 
 ### Sensor Calibration
-Each visualization file has configurable constants at the top that control behavior:
+
+Each visualization file (`.js`) has configurable constants at the top that control behavior:
 
 **rascunho3.js (Particle Visualization)**
 ```javascript
@@ -93,11 +96,13 @@ Edit these constants to modify behavior:
 | `MIN_FILTER_FREQ` | Lowest audio cutoff frequency |
 | `MAX_FILTER_FREQ` | Highest audio cutoff frequency |
 
-## Usage Guide
+## How to change the stimulus
 1. Open `index.html` in a text editor
 2. Change the `.js` file in the line 13 (illustration.js or sound.js)
 3. `Ctrl + S` to save
 4. Open `index.html` in a browser
+
+> :bulb: **Tip:** You can create your own stimuli using JavaScript!
 
 ## Authors
 

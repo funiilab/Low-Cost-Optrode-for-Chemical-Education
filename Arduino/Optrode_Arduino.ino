@@ -19,7 +19,7 @@ void loop() {
     delayMicroseconds(30);
   } 
   
-  mean = totalMeasures/nMeasures; //mean calculation of all measures
+  mean = totalMeasures / nMeasures; //mean calculation of all measures
   Serial.println(mean); //print mean value in seriar port
   
 }
